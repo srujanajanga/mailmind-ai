@@ -1,0 +1,20 @@
+# ============================================================================
+# MailMind AI — run the REST API and the Streamlit dashboard together.
+#   docker compose up --build
+#   API : http://localhost:8000/docs     UI : http://localhost:8501
+# ============================================================================
+services:
+  api:
+    build: .
+    image: mailmind-ai
+    command: uvicorn mailmind.api.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+
+  ui:
+    image: mailmind-ai          # reuse the image built by the `api` service
+    depends_on:
+      - api
+    command: streamlit run app/streamlit_app.py --server.address 0.0.0.0 --server.port 8501 --server.headless true
+    ports:
+      - "8501:8501"

@@ -1,0 +1,13 @@
+{
+  "rule_based": {
+    "accuracy": 0.7214,
+    "f1_macro": 0.7133
+  },
+  "ml_model": {
+    "accuracy": 0.9095,
+    "f1_macro": 0.9095
+  },
+  "accuracy_lift_points": 18.8,
+  "error_reduction_pct": 67.5,
+  "test_size": 840
+}

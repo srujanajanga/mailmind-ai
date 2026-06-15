@@ -1,0 +1,641 @@
+{
+  "classifier": "MailMindClassifier",
+  "predictions": [
+    {
+      "email": {
+        "subject": "URGENT: Production outage needs your approval",
+        "body": "The payment service is down in production. We need your approval to roll back the release immediately. Please reply ASAP.",
+        "sender": "oncall@company.com",
+        "sender_name": "On-Call Team",
+        "sender_domain": "company.com",
+        "recipient": "",
+        "timestamp": "2026-06-14T08:40:00",
+        "has_attachment": false,
+        "num_links": 1,
+        "thread_id": "",
+        "label": null,
+        "id": "59adf83f3d36"
+      },
+      "classification": {
+        "label": "Important",
+        "confidence": 0.9224471101378581,
+        "probabilities": {
+          "Important": 0.9224471101378581,
+          "Work": 0.012606952682778226,
+          "Personal": 0.005714129161012661,
+          "Social": 0.007787849264048601,
+          "Promotions": 0.0011545091435479992,
+          "Spam": 0.05028944961075426
+        }
+      },
+      "nlp": {
+        "keywords": [
+          "production",
+          "approval",
+          "urgent",
+          "outage",
+          "needs",
+          "payment",
+          "service",
+          "need"
+        ],
+        "sentiment": {
+          "label": "positive",
+          "score": 0.876,
+          "confidence": 0.876
+        },
+        "urgency": {
+          "level": "high",
+          "score": 0.8367,
+          "cues": [
+            "urgent",
+            "asap",
+            "immediately",
+            "capitalised emphasis"
+          ]
+        },
+        "intent": {
+          "label": "request",
+          "confidence": 0.8095
+        }
+      },
+      "priority": {
+        "score": 79.1,
+        "band": "High",
+        "reasons": [
+          "High-priority category: Important",
+          "Urgency cues detected: urgent",
+          "Recent message"
+        ]
+      },
+      "summary": "The payment service is down in production. We need your approval to roll back the release immediately.",
+      "suggested_actions": [
+        {
+          "action": "reply",
+          "label": "Reply now",
+          "reason": "High urgency and the sender is awaiting a response."
+        },
+        {
+          "action": "archive",
+          "label": "Archive",
+          "reason": "Keep the inbox tidy once the message has been handled."
+        }
+      ],
+      "flags": [
+        "urgent"
+      ]
+    },
+    {
+      "email": {
+        "subject": "Your account statement and invoice #482190 are ready",
+        "body": "Your monthly statement for May is available. Invoice #482190 for $1,240 is due on June 20. Please complete payment to avoid a late fee.",
+        "sender": "billing@bank.com",
+        "sender_name": "Billing Team",
+        "sender_domain": "bank.com",
+        "recipient": "",
+        "timestamp": "2026-06-13T10:00:00",
+        "has_attachment": true,
+        "num_links": 1,
+        "thread_id": "",
+        "label": null,
+        "id": "628b56e31ce0"
+      },
+      "classification": {
+        "label": "Important",
+        "confidence": 0.977150000026558,
+        "probabilities": {
+          "Important": 0.977150000026558,
+          "Work": 0.01852099042509041,
+          "Personal": 0.0005951410812296671,
+          "Social": 0.0009328458358389864,
+          "Promotions": 0.0008377346516100006,
+          "Spam": 0.0019632879796730243
+        }
+      },
+      "nlp": {
+        "keywords": [
+          "statement",
+          "invoice",
+          "account",
+          "ready",
+          "monthly",
+          "may",
+          "available",
+          "due"
+        ],
+        "sentiment": {
+          "label": "positive",
+          "score": 0.3818,
+          "confidence": 0.3818
+        },
+        "urgency": {
+          "level": "low",
+          "score": 0.0,
+          "cues": []
+        },
+        "intent": {
+          "label": "action_required",
+          "confidence": 0.8571
+        }
+      },
+      "priority": {
+        "score": 68.9,
+        "band": "High",
+        "reasons": [
+          "High-priority category: Important",
+          "VIP sender",
+          "Recent message"
+        ]
+      },
+      "summary": "Your monthly statement for May is available. Invoice #482190 for $1,240 is due on June 20.",
+      "suggested_actions": [
+        {
+          "action": "review",
+          "label": "Review & approve",
+          "reason": "The message requests an explicit action or approval."
+        },
+        {
+          "action": "archive",
+          "label": "Archive",
+          "reason": "Keep the inbox tidy once the message has been handled."
+        }
+      ],
+      "flags": [
+        "vip"
+      ]
+    },
+    {
+      "email": {
+        "subject": "Can you review my pull request today?",
+        "body": "The deploy is blocked on your review of the search refactor. Could you take a look before EOD? It is fairly small.",
+        "sender": "dev@work.com",
+        "sender_name": "Tom Walsh",
+        "sender_domain": "work.com",
+        "recipient": "",
+        "timestamp": "2026-06-14T09:05:00",
+        "has_attachment": false,
+        "num_links": 1,
+        "thread_id": "",
+        "label": null,
+        "id": "22951d28e1f7"
+      },
+      "classification": {
+        "label": "Work",
+        "confidence": 0.7329764810794799,
+        "probabilities": {
+          "Important": 0.11832270193323209,
+          "Work": 0.7329764810794799,
+          "Personal": 0.03123129891986744,
+          "Social": 0.06991406302865738,
+          "Promotions": 0.009228152128609939,
+          "Spam": 0.03832730291015316
+        }
+      },
+      "nlp": {
+        "keywords": [
+          "review",
+          "pull",
+          "request",
+          "today",
+          "deploy",
+          "blocked",
+          "search",
+          "refactor"
+        ],
+        "sentiment": {
+          "label": "negative",
+          "score": -0.3527,
+          "confidence": 0.3527
+        },
+        "urgency": {
+          "level": "medium",
+          "score": 0.426,
+          "cues": [
+            "eod",
+            "today"
+          ]
+        },
+        "intent": {
+          "label": "request",
+          "confidence": 0.6397
+        }
+      },
+      "priority": {
+        "score": 61.7,
+        "band": "High",
+        "reasons": [
+          "High-priority category: Work",
+          "Urgency cues detected: eod",
+          "Recent message"
+        ]
+      },
+      "summary": "The deploy is blocked on your review of the search refactor. Could you take a look before EOD?",
+      "suggested_actions": [
+        {
+          "action": "reply",
+          "label": "Reply",
+          "reason": "The sender asked a question or made a request."
+        },
+        {
+          "action": "archive",
+          "label": "Archive",
+          "reason": "Keep the inbox tidy once the message has been handled."
+        }
+      ],
+      "flags": []
+    },
+    {
+      "email": {
+        "subject": "Dinner this weekend?",
+        "body": "Hey! It's been way too long. Are you free for dinner this Saturday? Thinking of trying that new place downtown. Let me know!",
+        "sender": "sara@gmail.com",
+        "sender_name": "Sara Lee",
+        "sender_domain": "gmail.com",
+        "recipient": "",
+        "timestamp": "2026-06-13T19:20:00",
+        "has_attachment": false,
+        "num_links": 0,
+        "thread_id": "",
+        "label": null,
+        "id": "9cd1a0475f12"
+      },
+      "classification": {
+        "label": "Personal",
+        "confidence": 0.9902411568497099,
+        "probabilities": {
+          "Important": 0.0015118511636066782,
+          "Work": 0.005116455986962256,
+          "Personal": 0.9902411568497099,
+          "Social": 0.002852880204914564,
+          "Promotions": 7.206720545049846e-05,
+          "Spam": 0.0002055885893562058
+        }
+      },
+      "nlp": {
+        "keywords": [
+          "dinner",
+          "weekend",
+          "hey",
+          "way",
+          "long",
+          "free",
+          "saturday",
+          "thinking"
+        ],
+        "sentiment": {
+          "label": "positive",
+          "score": 0.6421,
+          "confidence": 0.6421
+        },
+        "urgency": {
+          "level": "low",
+          "score": 0.12,
+          "cues": [
+            "exclamation marks"
+          ]
+        },
+        "intent": {
+          "label": "question",
+          "confidence": 0.8333
+        }
+      },
+      "priority": {
+        "score": 51.0,
+        "band": "Medium",
+        "reasons": [
+          "High-priority category: Personal",
+          "Recent message"
+        ]
+      },
+      "summary": "Hey! It's been way too long.",
+      "suggested_actions": [
+        {
+          "action": "reply",
+          "label": "Reply",
+          "reason": "The sender asked a question or made a request."
+        },
+        {
+          "action": "archive",
+          "label": "Archive",
+          "reason": "Keep the inbox tidy once the message has been handled."
+        }
+      ],
+      "flags": []
+    },
+    {
+      "email": {
+        "subject": "Q3 roadmap review \u2014 agenda attached",
+        "body": "Hi team, please review the attached roadmap before our meeting on Thursday at 2pm. Let me know if you have agenda items to add.",
+        "sender": "pm@work.com",
+        "sender_name": "Priya Patel",
+        "sender_domain": "work.com",
+        "recipient": "",
+        "timestamp": "2026-06-12T14:30:00",
+        "has_attachment": true,
+        "num_links": 0,
+        "thread_id": "",
+        "label": null,
+        "id": "ed6053e3f1a6"
+      },
+      "classification": {
+        "label": "Work",
+        "confidence": 0.8614729834320938,
+        "probabilities": {
+          "Important": 0.12019305884753388,
+          "Work": 0.8614729834320938,
+          "Personal": 0.016926152272018817,
+          "Social": 0.0008539599413973176,
+          "Promotions": 6.755392514907234e-05,
+          "Spam": 0.0004862915818071992
+        }
+      },
+      "nlp": {
+        "keywords": [
+          "roadmap",
+          "review",
+          "agenda",
+          "attached",
+          "team",
+          "please",
+          "meeting",
+          "thursday"
+        ],
+        "sentiment": {
+          "label": "positive",
+          "score": 0.3182,
+          "confidence": 0.3182
+        },
+        "urgency": {
+          "level": "low",
+          "score": 0.0,
+          "cues": []
+        },
+        "intent": {
+          "label": "meeting",
+          "confidence": 0.7679
+        }
+      },
+      "priority": {
+        "score": 49.5,
+        "band": "Medium",
+        "reasons": [
+          "High-priority category: Work"
+        ]
+      },
+      "summary": "Hi team, please review the attached roadmap before our meeting on Thursday at 2pm. Let me know if you have agenda items to add.",
+      "suggested_actions": [
+        {
+          "action": "add_to_calendar",
+          "label": "Add to calendar",
+          "reason": "The message proposes or references a meeting."
+        },
+        {
+          "action": "archive",
+          "label": "Archive",
+          "reason": "Keep the inbox tidy once the message has been handled."
+        }
+      ],
+      "flags": []
+    },
+    {
+      "email": {
+        "subject": "You have WON a $1000 gift card claim NOW",
+        "body": "Congratulations!!! You are our lucky winner. To claim your $1000 gift card, click the link and confirm your bank details immediately!!!",
+        "sender": "winner@claim-prize.info",
+        "sender_name": "Prize Department",
+        "sender_domain": "claim-prize.info",
+        "recipient": "",
+        "timestamp": "2026-06-14T03:15:00",
+        "has_attachment": false,
+        "num_links": 3,
+        "thread_id": "",
+        "label": null,
+        "id": "8bd4d1d3bef1"
+      },
+      "classification": {
+        "label": "Spam",
+        "confidence": 0.8626088580641323,
+        "probabilities": {
+          "Important": 0.002808395742746293,
+          "Work": 2.7328924575337813e-05,
+          "Personal": 5.428219667158522e-06,
+          "Social": 0.0023641449218114183,
+          "Promotions": 0.1321858441270674,
+          "Spam": 0.8626088580641323
+        }
+      },
+      "nlp": {
+        "keywords": [
+          "gift card",
+          "claim",
+          "congratulations",
+          "lucky",
+          "winner",
+          "click",
+          "link",
+          "confirm"
+        ],
+        "sentiment": {
+          "label": "positive",
+          "score": 0.9716,
+          "confidence": 0.9716
+        },
+        "urgency": {
+          "level": "high",
+          "score": 0.64,
+          "cues": [
+            "immediately",
+            "multiple exclamation marks",
+            "ALL-CAPS emphasis"
+          ]
+        },
+        "intent": {
+          "label": "action_required",
+          "confidence": 0.875
+        }
+      },
+      "priority": {
+        "score": 41.8,
+        "band": "Medium",
+        "reasons": [
+          "Urgency cues detected: immediately",
+          "Recent message"
+        ]
+      },
+      "summary": "Congratulations!!! You are our lucky winner.",
+      "suggested_actions": [
+        {
+          "action": "delete",
+          "label": "Delete & block",
+          "reason": "Classified as spam -- safe to remove and block the sender."
+        },
+        {
+          "action": "report_spam",
+          "label": "Report spam",
+          "reason": "Reporting improves future spam filtering."
+        }
+      ],
+      "flags": [
+        "urgent",
+        "spam"
+      ]
+    },
+    {
+      "email": {
+        "subject": "FLASH SALE 70% OFF everything ends tonight",
+        "body": "Save big on all items. Use code SAVE70 at checkout. Free shipping on all orders this week. Shop now before the deal ends. Unsubscribe anytime.",
+        "sender": "deals@shop.com",
+        "sender_name": "Shop Deals",
+        "sender_domain": "shop.com",
+        "recipient": "",
+        "timestamp": "2026-06-14T06:00:00",
+        "has_attachment": false,
+        "num_links": 4,
+        "thread_id": "",
+        "label": null,
+        "id": "f0f874f5a009"
+      },
+      "classification": {
+        "label": "Promotions",
+        "confidence": 0.9960815786669921,
+        "probabilities": {
+          "Important": 6.509891472790463e-06,
+          "Work": 3.469792158669518e-06,
+          "Personal": 4.302261465263183e-07,
+          "Social": 0.0003306238899454001,
+          "Promotions": 0.9960815786669921,
+          "Spam": 0.0035773875332846534
+        }
+      },
+      "nlp": {
+        "keywords": [
+          "ends",
+          "save",
+          "flash",
+          "sale",
+          "everything",
+          "tonight",
+          "big",
+          "items"
+        ],
+        "sentiment": {
+          "label": "positive",
+          "score": 0.7579,
+          "confidence": 0.7579
+        },
+        "urgency": {
+          "level": "low",
+          "score": 0.2,
+          "cues": [
+            "ALL-CAPS emphasis"
+          ]
+        },
+        "intent": {
+          "label": "promotion",
+          "confidence": 1.0
+        }
+      },
+      "priority": {
+        "score": 36.5,
+        "band": "Low",
+        "reasons": [
+          "Recent message"
+        ]
+      },
+      "summary": "Save big on all items. Use code SAVE70 at checkout.",
+      "suggested_actions": [
+        {
+          "action": "unsubscribe",
+          "label": "Unsubscribe",
+          "reason": "Promotional mail -- unsubscribe to reduce future noise."
+        },
+        {
+          "action": "mark_read",
+          "label": "Mark as read",
+          "reason": "Low priority -- clear it from the unread count."
+        },
+        {
+          "action": "archive",
+          "label": "Archive",
+          "reason": "Keep the inbox tidy once the message has been handled."
+        }
+      ],
+      "flags": [
+        "promo"
+      ]
+    },
+    {
+      "email": {
+        "subject": "Jordan tagged you in a photo",
+        "body": "Jordan and 3 others tagged you in a new photo. See what your friends are up to and react to their posts in the app.",
+        "sender": "notifications@facebook.com",
+        "sender_name": "Facebook",
+        "sender_domain": "facebook.com",
+        "recipient": "",
+        "timestamp": "2026-06-11T21:00:00",
+        "has_attachment": false,
+        "num_links": 2,
+        "thread_id": "",
+        "label": null,
+        "id": "477cb18f6637"
+      },
+      "classification": {
+        "label": "Social",
+        "confidence": 0.9585707731226597,
+        "probabilities": {
+          "Important": 0.0014489861838507818,
+          "Work": 0.0025863449417714893,
+          "Personal": 0.01665638610853391,
+          "Social": 0.9585707731226597,
+          "Promotions": 0.0187397940787863,
+          "Spam": 0.001997715564398069
+        }
+      },
+      "nlp": {
+        "keywords": [
+          "jordan",
+          "tagged",
+          "photo",
+          "others",
+          "new",
+          "see",
+          "friends",
+          "react"
+        ],
+        "sentiment": {
+          "label": "positive",
+          "score": 0.4767,
+          "confidence": 0.4767
+        },
+        "urgency": {
+          "level": "low",
+          "score": 0.0,
+          "cues": []
+        },
+        "intent": {
+          "label": "social",
+          "confidence": 0.75
+        }
+      },
+      "priority": {
+        "score": 36.4,
+        "band": "Low",
+        "reasons": []
+      },
+      "summary": "Jordan and 3 others tagged you in a new photo. See what your friends are up to and react to their posts in the app.",
+      "suggested_actions": [
+        {
+          "action": "mark_read",
+          "label": "Mark as read",
+          "reason": "Low priority -- clear it from the unread count."
+        },
+        {
+          "action": "archive",
+          "label": "Archive",
+          "reason": "Keep the inbox tidy once the message has been handled."
+        }
+      ],
+      "flags": []
+    }
+  ]
+}

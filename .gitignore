@@ -1,0 +1,45 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.installed.cfg
+*.egg
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- ML artefacts ----
+# The trained model + metrics ARE committed so the repo runs out-of-the-box.
+# They can always be regenerated with `python scripts/train_model.py`.
+models/*.pkl
+
+# ---- Database (regenerated at runtime) ----
+*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+
+# ---- OS / editor / local agent config ----
+.DS_Store
+.idea/
+.vscode/
+*.swp
+.claude/
+
+# ---- Test / coverage ----
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Keep the directories themselves
+!models/.gitkeep
+!data/.gitkeep
